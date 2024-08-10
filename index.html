@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <div id="loader"></div>
+<div id="content" style="display:none;">
+   
+    <nav id="desktop-nav">
+        <div class="logo">Ehoneah Frank</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+                    </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ehoneah Frank</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/heroimage.png" alt="Ehoneah Frank profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ehoneah Frank</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Frank-Ehoneah-CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ehoneah-frank'" />
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Ehoneah-Frank'" />
+                <img src="./assets/facebook.png" alt="My facebook profile" class="icon" onclick="location.href='https://www.facebook.com/ehoneah-frank'" />
+                <img src="./assets/whatsapp.png" alt="My whatsapp profile" class="icon" onclick="location.href='https://wa.me/+233247511566'" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-Text-height">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+        </div>
+        
+        <div class="section-container">
+            <div class="about__pic-container">
+                <img src="./assets/about.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>3+ months <br /> Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>AWS Cloud Practitioner <br /> BSc in Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                         I'm a passionate web developer with a strong foundation in building scalable and efficient server-side applications. With over 3 months of hands-on experience in backend development, I have honed my skills in database management, and API development.
+                    </p>
+                    <p>
+                        I hold a Bachelor’s degree in Information Technology and have earned my AWS Cloud Practitioner certification. My goal is to contribute to impactful projects while continuously growing as a developer.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" /> -->
+    </section>
+
+    <section id="experience">
+        <div class="section-Text-height">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GIT</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Next JS</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Other</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Graphic Design</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Photography</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Social Media Management</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Problem Solving</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-section">
+        <div class="counter-container">
+            <div class="counter-box">
+                <span class="counter" data-target="2190">0</span>
+                <p>Hours of Works</p>
+            </div>
+            <div class="counter-box">
+                <span class="counter" data-target="100">0</span>
+                <p>Projects Done</p>
+            </div>
+            <div class="counter-box">
+                <span class="counter" data-target="100">0</span>
+                <p>Satisfied Customers</p>
+            </div>
+            <!-- <div class="counter-box">
+                <span class="counter" data-target="32">0</span>
+                <p>Awards Winning</p>
+            </div> -->
+        </div>
+    </section>
+    
+
+    <section id="projects">
+        <div class="section-Text-height">
+            <p class="section__text__p1">My Recent</p>
+            <h1 class="title">Projects</h1>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./assets/tracker.jpeg" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2>Smart Expense Tracker</h2>
+                    <p>A webapp for tracking expenses.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Ehoneah-Frank/smartExpenseTracker')">Link to project</button>
+                        </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/fruitApp.png" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2>Fruit Selling App</h2>
+                    <p>API for a fruit selling app.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Ehoneah-Frank/fruitAPI')">Link to project</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/recipe-app.jpg" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2>Recipe App</h2>
+                    <p>API for a recipe app.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Ehoneah-Frank/recipe-api')">Link to project</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/TodoApp.png" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2>Todo App</h2>
+                    <p>An Endpoint for a todo app.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Ehoneah-Frank/toDoApp-api')">Link to project</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/pc.png" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2> sass Portfolio Project</P></h2>
+                    <p>A saas Portfolio website.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Spectrum-Force/portfolio-api')">Link to project</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/blog.jpeg" alt="Project 1 Screenshot" class="project-image">
+                <div class="project-info">
+                    <h2>Blog API</h2>
+                    <p>An api for a blog website.</p>
+                    <div class="project-buttons">
+                        <button class="btn btn-color-1" onclick="window.open('https://github.com/Ehoneah-Frank/blogAPI')">Link to project</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar blocks for other projects -->
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card active">
+                <img src="./assets/dr.jpeg" alt="Client 1" class="client-img">
+                <p>"Working with Ehoneah was an absolute pleasure. The quality of work was top-notch."</p>
+                <cite>- Dr. Obed</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="./assets/Esther.jpg" alt="Client 2" class="client-img">
+                <p>"Ehoneah exceeded my expectations with his professionalism and creativity."</p>
+                <cite>- Esther Kwashie</cite>
+            </div>
+            <div class="testimonial-card">
+                <img src="./assets/Racheal.jpeg" alt="Client 3" class="client-img">
+                <p>"I highly recommend Ehoneah for anyone looking for quality and dedication."</p>
+                <cite>- Racheal</cite>
+            </div>
+        </div>
+        <div class="testimonial-pagination">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+    
+    
+    
+    <section id="contact">
+        <div class="section-Text-height">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/mgvwyybe" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-color-1">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7939.973902347389!2d-0.09025530427136311!3d5.7150162826471895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf821391091d33%3A0x37b2bbd6a4d904e2!2sCedars%20Estate!5e0!3m2!1sen!2sgh!4v1723219496082!5m2!1sen!2sgh" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Ehoneah Frank</h2>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ehoneah-frank'" />
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Ehoneah-Frank'" />
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Ehoneah Frank. All rights reserved.</p>
+        </div>
+    </footer>   
+    <script src="./script.js"></script>
+</div>
+
+   
+</body>
+</html>
