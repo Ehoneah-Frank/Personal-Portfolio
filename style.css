@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -184,20 +185,24 @@ section {
 /* Profile Section */
 #profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    /* padding: 8rem 0; */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
 }
 
 .section__pic-container img {
     border-radius: 50%;
-    height: 450px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     object-fit: cover;
 }
 
 .section__text {
-    text-align: left;
+    max-width: 600px;
 }
 
 .section__text__p1 {
@@ -220,6 +225,7 @@ section {
 .btn-container {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -464,6 +470,48 @@ article .icon {
     gap: 1rem;
 }
 
+/* Media Queries for Projects Section */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    #projects {
+        padding: 4rem 2rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+}
+
 /* Testimonials Section */
 #testimonials {
     padding: 50px 20px;
@@ -665,4 +713,24 @@ footer {
     font-size: 0.9rem;
     color: #bbb;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+
+    .section__pic-container img {
+        max-width: 300px;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    #socials-container {
+        justify-content: center;
+    }
 }
