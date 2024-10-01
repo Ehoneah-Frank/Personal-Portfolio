@@ -273,7 +273,7 @@
 
     /* Contact Section */
     #contact {
-        padding: 5rem 3rem;
+        padding: 4rem 3rem;
     }
 
     .contact-content {
@@ -282,12 +282,12 @@
     }
 
     .map-container {
-        height: 350px;
+        height: 300px;
     }
 
     /* Footer */
     footer {
-        padding: 3rem 2rem;
+        padding: 2rem 1rem;
     }
 
     .footer-content {
@@ -297,7 +297,7 @@
 
     .footer-links {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         margin-top: 1rem;
     }
 
@@ -310,117 +310,14 @@
 /* Small Desktops (max-width: 1024px) */
 @media (max-width: 1024px) {
 
-    /* General styling */
-    nav {
-        padding: 1rem 5rem;
-    }
-
-    .nav-links {
-        display: none; /* Hide desktop navigation on small desktops */
-    }
-
-    #hamburger-nav {
-        display: flex; /* Show hamburger menu on small desktops */
-        padding: 1rem 5rem;
-    }
-
-    /* Profile Section */
-    #profile {
-        flex-direction: column;
-        text-align: center;
-        padding: 6rem 5rem;
-    }
-
-    .section__pic-container img {
-        height: 350px;
-        width: 350px;
-    }
-
-    .section__text {
-        margin-top: 2rem;
-    }
-
-    .btn-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    /* About Section */
-    #about {
-        padding: 6rem 5rem;
-    }
-
-    .about__pic-container img {
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .about-containers {
-        flex-direction: column;
-    }
-
-    .details-container {
-        margin-bottom: 2rem;
-    }
-
-    .section-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    /* Experience Section */
-    #experience {
-        padding: 6rem 5rem;
-    }
-
-    .experience-details-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .article-container {
-        flex-direction: column;
+    /* Projects Section */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
-    /* Projects Section */
-    #projects {
-        padding: 4rem 5rem;
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .project-card {
-        padding: 1.5rem;
-    }
-
     .project-image {
-        height: 250px;
-    }
-
-    /* Testimonials Section */
-    #testimonials {
-        padding: 5rem 3rem;
-    }
-
-    .testimonial-container {
-        flex-direction: column;
-    }
-
-    .testimonial-card {
-        max-width: 100%;
-        margin-bottom: 2rem;
-        position: static;
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    .testimonial-pagination {
-        display: none; /* Hide pagination on small desktops */
+        height: 180px;
     }
 
     /* Contact Section */
